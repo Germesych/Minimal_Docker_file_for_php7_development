@@ -1,0 +1,10 @@
+version: '3'
+services:
+  php-apache:
+    build:
+      context: .  # Путь к Dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"  # Пробрасываем порт 8080 на порт 80 внутри контейнера
+    volumes:
+      - ./src:/var/www/html  # Монтируем папку src внутрь контейнера
