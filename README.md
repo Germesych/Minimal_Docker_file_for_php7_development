@@ -8,8 +8,7 @@ The simplest possible Docker configuration for php7 development
 docker build .
 ```
 
-## Run
-Запустить
+## Run / Запустить
 
 ```bash
 docker-compose down
